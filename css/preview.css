@@ -1,0 +1,78 @@
+.header{
+    position: relative;
+}
+.header .logo{
+    margin-left: 0;
+}
+
+.main-preview{
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+.main-preview .container{
+    width: 860px;
+    margin: 0 auto;
+}
+
+.main-mobile{
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+.iphone-wrapper{
+    position: relative;
+    float: left;
+}
+.iphone-wrapper iframe{
+    position: absolute;
+    left: 20px;
+    border: 0 none;
+    top: 86px;
+}
+.instruction{
+    margin-left: 470px;
+    padding-top: 40px;
+}
+.instruction p{
+    line-height: 26px;
+}
+.instruction ul li{
+    margin-bottom: 10px;
+    line-height: 26px;
+    vertical-align: middle;
+}
+.instruction ul li .icon-circle-thin{
+    font-size: 8px;
+    line-height: 26px;
+    vertical-align: middle;
+    float: left;
+    width: 20px;
+}
+.instruction input{
+    padding: 6px 9px;
+    color: #797979;
+    font-weight: 300;
+    width: 340px;
+    font-size: 16px;
+}
+
+.ipad-iframe{
+    width: 1024px;
+    height: 750px;
+    position: relative;
+    left: 50%;
+    margin-left: -512px;
+    box-shadow: 0 1px 8px rgba(10,15,20,0.2);
+}
+
+@media (min-width: 768px) {
+    .main-preview .container{
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .main-preview .container {
+        width: 860px;
+    }
+}
