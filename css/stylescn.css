@@ -625,10 +625,10 @@ body{
 
 .project-intro h1:before {
      background: none repeat scroll 0 0 #16a7b1;
-     /*bottom: -10px;*/
+     bottom: 10px;
      content: "";
      display: block;
-     height: 3px;
+     height: 4px;
      position: relative;
      width: 60px;
  }
@@ -1783,6 +1783,12 @@ body.lb-disable-scrolling {
 .quote-stype {
     color: #16a7b1;
     font-style: oblique;
+    font-weight: 500;
+}
+
+.search-subdes {
+    color:#bbbbbb;
+    font-size:18px;
 }
 
 .imageshadow {
