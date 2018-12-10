@@ -1,0 +1,47 @@
+.speaker {
+  margin: 40px auto;
+  position: relative;
+  display: block;
+  width: 68px;
+  height: 68px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#buttonShape{
+  stroke: #D0021B;
+  fill:none;
+  stroke-width: 25px;
+  transform: scale(.13) translate(20px, 70px);
+}
+
+/*wave*/
+.speaker > span:before {
+  transform: scale(1.5) rotate(45deg);
+  border-radius: 0 50px 0 0;
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-style: double;
+  border-color: #D0021B;
+  border-width: 7px 7px 0 0;
+  /*border-spacing: 100px;*/
+  left: 40px;
+  top: 20px;
+  transition: all 0.2s ease-out;
+}
+.speaker:hover > span:before {
+  -webkit-transform: scale(1.3) translate(-3px, 0) rotate(42deg);
+          transform: scale(1.3) translate(-3px, 0) rotate(42deg);
+}
+.speaker.mute > span:before {
+  -webkit-transform: scale(1.1) translate(-15px, 0) rotate(36deg);
+          transform: scale(1.1) translate(-15px, 0) rotate(36deg);
+  opacity: 0;
+}

@@ -1,0 +1,40 @@
+#vcent, #animatedText {
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 140px 20px;
+}
+
+#vcent {
+  height: 100%;
+  width: 0;
+}
+
+#animatedText {
+  position: relative;
+  font-size: 1.07em;
+  font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+#animatedText.loading {
+  color: #fff;
+}
+#animatedText.loading:after {
+  content: attr(data-loader) "%";
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  width: 100%;
+  font-size: 40px;
+  color: #D0021B;
+}
+
+#animatedBackground {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #D0021B;
+
+}

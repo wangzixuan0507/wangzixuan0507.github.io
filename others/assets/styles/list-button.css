@@ -1,0 +1,131 @@
+#list-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#list-ul {
+  position: relative;
+  list-style: none;
+  -webkit-transform: rotate(-15deg) skew(20deg, 5deg);
+          transform: rotate(-15deg) skew(20deg, 5deg);
+}
+
+.list-item {
+  background: #fafafa;
+  color: #333;
+  text-align: left;
+  height: 2.5em;
+  width: 20em;
+  vertical-align: center;
+  line-height: 2.5em;
+  /*border-bottom: .3em solid #060606;*/
+  margin-bottom: .1em;
+  position: relative;
+  display: block;
+  text-decoration: none;
+  padding: 0 1em;
+  -webkit-transition: all .25s linear;
+          transition: all .25s linear;
+}
+
+.list-item > i {
+  color:#D0021B;
+}
+
+.blackFont {
+  font-size: 0.6em;
+}
+
+.list-item:hover {
+  background: #D0021B;
+  color: #fffcfb !important;
+
+  -webkit-transform: translate(.2em, -0.1em);
+          transform: translate(.2em, -0.1em);
+  -webkit-transition: all .25s linear;
+          transition: all .25s linear;
+}
+.list-item:hover:before, .list-item:hover:after {
+  content: '';
+  -webkit-transition: all .25s linear;
+          transition: all .25s linear;
+}
+.list-item:hover:before {
+  background: #8D2C38;
+  width: .2em;
+  top: .1em;
+  left: -.2em;
+}
+.list-item:hover:after {
+  background: #8D2C38;
+  width: .2em;
+  bottom: -10.1em;
+  left: 9.8em;
+  height: 20em;
+}
+
+.list-item:before, .list-item:after {
+  content: '';
+  position: absolute;
+  -webkit-transition: all .25s linear;
+          transition: all .25s linear;
+  width: 0.3em;
+
+}
+
+ /*shadow below bar*/
+.list-item:after {
+  height: 20em;
+  background: #EDEDED;
+  bottom: -10.15em;
+  left: 9.7em;
+  -webkit-transform: rotate(90deg) skew(0, 45deg);
+          transform: rotate(90deg) skew(0, 45deg);
+}
+/*shadow before bar*/
+.list-item:before {
+  height: 2.5em;
+  background: #EDEDED;
+  top: .16em;
+  left: -.3em;
+  -webkit-transform: skewY(-45deg);
+          transform: skewY(-45deg);
+}
+
+.hoverDisabled {
+  pointer-events: none;  /**<-----------*/
+  background: #fafafa;
+  text-align: center;
+  height: 5em;
+  width: 20em;
+  margin-bottom: .3em;
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+
+.hoverDisabled > h4 {
+  color:#D0021B;
+  line-height: 4.5em;
+}
+
+/*shadow before bar*/
+.hoverDisabled:before {
+  height: 5em;
+  background: #EDEDED;
+  top: .16em;
+  left: -..3em;
+  -webkit-transform: skewY(-45deg);
+          transform: skewY(-45deg);
+}
+
+.hoverDisabled:after {
+  height: 20em;
+  width: 0.3em;
+  background: #EDEDED;
+  bottom: -10.15em;
+  left: 9.7em;
+  -webkit-transform: rotate(90deg) skew(0, 45deg);
+          transform: rotate(90deg) skew(0, 45deg);
+}
